@@ -3,7 +3,6 @@ name: Testing Self Hosted Runner
 on: pull_request
 
 jobs:
-
   hello:
     runs-on: pritunl-VirtualBox
     steps:
