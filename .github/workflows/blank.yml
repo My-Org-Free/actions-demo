@@ -2,8 +2,11 @@ name: Testing Self Hosted Runner
 
 on: pull_request
 
+  
 jobs:
   hello:
+    env:
+      PASS: ${{ secrets.PASSWORD }}
     runs-on: [self-hosted, linux]
     steps:
       - name: Say Hello
