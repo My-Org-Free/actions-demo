@@ -1,0 +1,10 @@
+name: test
+
+on: [pull_request, pull_request_target]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Go
+        run: echo "RAN!"
