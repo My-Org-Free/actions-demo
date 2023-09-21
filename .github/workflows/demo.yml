@@ -1,0 +1,9 @@
+on: pull_request
+
+jobs:
+  hello:
+    runs-on: [self-hosted, linux]
+    steps:
+      - name: Hello
+        run: echo "Hello"
+    
